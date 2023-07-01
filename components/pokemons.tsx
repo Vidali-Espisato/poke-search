@@ -16,7 +16,7 @@ export default function({ pokemons }: pokemonsProps) {
 
 
     return (
-        <div className="mx-auto w-1/2 h-screen">
+        <div className="h-screen w-3/4 sm:w-1/2 mx-auto">
             <Input
                 type="text"
                 value={searchText}
@@ -26,7 +26,7 @@ export default function({ pokemons }: pokemonsProps) {
                 onChange={e => setSearchText(e.target.value.trim())}
                 className="border-4 border-zinc-500 rounded-xl text-lg text-center py-6 font-semibold placeholder:text-zinc-500 placeholder:italic"
             />
-            <div className="my-5 grid text-center xl:grid-cols-3 lg:grid-cols-2 gap-x-10 gap-y-5 h-4/5 overflow-y-scroll no-scrollbar">
+            <div className="my-5 grid text-center xl:grid-cols-3 lg:grid-cols-2 gap-x-10 gap-y-4 h-4/5 overflow-y-scroll no-scrollbar">
                 {
                     filteredPokemons?.map((pokemon: any) => (
                         <PokemonCard name={ pokemon.name } />
