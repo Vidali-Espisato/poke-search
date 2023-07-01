@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import PokemonCard from "./pokemonPill"
+import PokemonPill from "./pokemonPill"
 import { Input } from "./ui/input"
 
 
@@ -28,8 +28,8 @@ export default function Pokemons({ pokemons }: pokemonsProps) {
             />
             <div className="my-5 grid text-center xl:grid-cols-3 lg:grid-cols-2 gap-x-10 gap-y-4 h-4/5 overflow-y-scroll no-scrollbar">
                 {
-                    filteredPokemons?.map((pokemon: any) => (
-                        <PokemonCard name={ pokemon.name } />
+                    filteredPokemons?.map((pokemon: any, idx: any) => (
+                        <PokemonPill name={ pokemon.name } key={ idx } />
                     ))
                 }
             </div>

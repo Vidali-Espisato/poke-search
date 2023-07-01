@@ -26,8 +26,8 @@ export default function PokemonDetails({ name, weight, typeData }: { name: strin
                 <div className="flex item-center gap-3">
                     types:
                     {
-                        typeData?.map((t: any) => (
-                            <TypeColor typeName={ t.type.name } />
+                        typeData?.map((t: any, idx: any) => (
+                            <TypeColor typeName={ t.type.name } key={ idx } />
                         ))
                     }
                 </div>
