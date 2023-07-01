@@ -12,6 +12,5 @@ export async function getPokemon(pokemonName: string) {
 
     const response = await fetch(API_BASE_URL + pokemonName)
     const data = await response.json()
-    console.log("data", data)
     return data
 }
