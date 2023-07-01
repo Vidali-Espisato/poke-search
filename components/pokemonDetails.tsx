@@ -16,7 +16,7 @@ function TypeColor({ typeName }: { typeName: string }) {
 }
 
 
-export default function({ name, weight, typeData }: { name: string, weight: number, typeData: any }) {
+export default function PokemonDetails({ name, weight, typeData }: { name: string, weight: number, typeData: any }) {
 
     return (
         <div>

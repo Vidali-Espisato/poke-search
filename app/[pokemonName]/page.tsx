@@ -4,7 +4,7 @@ import PokemonStats from "@/components/pokemonStats"
 import { getPokemon } from "@/lib/apis"
 
 
-export default async function({ params }: { params: { pokemonName: string } }) {
+export default async function PokeMon({ params }: { params: { pokemonName: string } }) {
     const { pokemonName } = params
     const pokemon = await getPokemon(pokemonName)
 

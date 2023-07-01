@@ -3,7 +3,7 @@
 import Progress from "./ui/progress"
 
 
-export default function ({ stats }: { stats: any }) {
+export default function PokemonStats({ stats }: { stats: any }) {
     return (
         <div className="mt-5">
             {

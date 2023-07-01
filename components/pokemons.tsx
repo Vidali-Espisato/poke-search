@@ -9,7 +9,7 @@ interface pokemonsProps {
     pokemons: any[]
 }
 
-export default function({ pokemons }: pokemonsProps) {
+export default function Pokemons({ pokemons }: pokemonsProps) {
     const [searchText, setSearchText] = useState("")
 
     const filteredPokemons = pokemons?.filter((pokemon: any) => pokemon.name.toLowerCase().includes(searchText.toLowerCase()))

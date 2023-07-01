@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 
-export default function({ imageUrl, pokemonName }: { imageUrl: string, pokemonName: string }) {
+export default function PokemonImage({ imageUrl, pokemonName }: { imageUrl: string, pokemonName: string }) {
     return (
         <div className="h-[40vh] xl:h-[50vh] relative">
             <Image

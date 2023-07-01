@@ -1,6 +1,6 @@
 "use client"
 
-export default function({ value, className }: { value: number, className: string }) {
+export default function Progress({ value, className }: { value: number, className: string }) {
   const maxValue = value > 95 ? 150 : 100
 
   return (
